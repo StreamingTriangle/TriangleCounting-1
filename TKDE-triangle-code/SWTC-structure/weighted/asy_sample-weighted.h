@@ -61,7 +61,7 @@ public:
 			s = d;
 			d = tmp;
 		}
-		double p = (rand()+1)/double(RAND_MAX+2);
+		double p = (rand()%10000+1)/double(10000+2);
 		int group  = rand()% group_num;
 		current_time = time;
 		ss->update(time - window_size);
